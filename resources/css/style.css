@@ -1,0 +1,32 @@
+body {
+}
+a {
+	color: #00B7FF;
+}
+
+.page {
+	height: 100vh;
+}
+.content {
+	height: 100%;
+	padding: 0 !important;
+}
+.content .mdl-cell {
+	margin: 0 !important;
+}
+
+
+.login-background {
+	background: url("/resources/images/login-background.jpg") no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+.login-form {
+	padding: 30px;
+}
+.login-form h1 {
+	color: #448AFF;
+	margin: 0 !important;
+}
