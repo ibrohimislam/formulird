@@ -4,32 +4,19 @@
     <title></title>
     <link rel="stylesheet" href="resources/css/style.css">
     <link rel="stylesheet" href="resources/css/material.min.css">
-    <script src="/resources/js/angular.min.js"></script>
-    <script src="/resources/js/material.min.js"></script>
   </head>
   <body>
     <div ng-app="formulird" ng-controller="formulirController">
-      <div ng-show="showLoader" ng-cloak class="page"><img src="/resources/images/loader.gif"></div>
-      <div ng-show="showLogin" ng-cloak class="page">
-        <div class="mdl-grid content">
-          <div class="mdl-cell mdl-cell--9-col login-background"></div>
-          <div class="mdl-cell mdl-cell--3-col mdl-card login-form">
-            <h1>Login</h1>
-            <form action="#">
-              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                <input id="username" type="text" class="mdl-textfield__input">
-                <label for="username" class="mdl-textfield__label">Username</label>
-              </div>
-              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                <input id="password" type="password" class="mdl-textfield__input">
-                <label for="password" class="mdl-textfield__label">Password</label>
-              </div>
-            </form>
-            <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent">Masuk</button>
-          </div>
+      <div ng-show="showLoader" ng-cloak class="page loader-wrapper">
+        <div class="loader">
+          <h1>FormulirD</h1><img src="/resources/images/loader.gif">
         </div>
       </div>
+      <div ng-show="showApplication" ng-cloak class="page">content</div>
     </div>
-    <script src="/resources/js/script.js"></script>
+    <script src="/resources/js/angular.min.js"></script>
+    <script src="/resources/js/app/httpInterceptor.js"></script>
+    <script src="/resources/js/material.min.js"></script>
+    <script src="/resources/js/app/application.js"></script>
   </body>
 </html>

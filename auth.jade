@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  .page
+    .mdl-grid.content
+      .mdl-cell.mdl-cell--9-col.login-background
+      .mdl-cell.mdl-cell--3-col.mdl-card.login-form
+        h1 Login
+        form(action='#')
+          .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label
+            input#username.mdl-textfield__input(type='text')
+            label.mdl-textfield__label(for='username') Username
+          .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label
+            input#password.mdl-textfield__input(type='password')
+            label.mdl-textfield__label(for='password') Password
+        button.mdl-button.mdl-js-button.mdl-button--raised.mdl-button--accent Masuk

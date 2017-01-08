@@ -3,6 +3,9 @@ body {
 a {
 	color: #00B7FF;
 }
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
 
 .page {
 	height: 100vh;
@@ -15,6 +18,23 @@ a {
 	margin: 0 !important;
 }
 
+.loader-wrapper {
+	position: relative;
+}
+.loader {
+	width: 680px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.loader img {
+	margin-top: -150px;
+}
+.loader h1 {
+	font-weight: 200;
+	text-align: center;
+}
 
 .login-background {
 	background: url("/resources/images/login-background.jpg") no-repeat center center fixed; 
@@ -29,4 +49,6 @@ a {
 .login-form h1 {
 	color: #448AFF;
 	margin: 0 !important;
+	font-weight: 200;
+	font-size: 40px;
 }

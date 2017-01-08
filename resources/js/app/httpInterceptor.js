@@ -37,17 +37,3 @@ angular.module('SharedServices', [])
       }
     };
   });
-
-var myApp = angular.module('formulird', [ 'SharedServices' ]);
-
-myApp.controller('formulirController', ['$scope', '$http', 'HTTPStateListenner', function($scope, $http, HTTPStateListenner) {
-
-  $scope.step = 1;
-  $scope.status = "";
-  $scope.showLoader = false;
-  $scope.showLogin = true;
-  $scope.ip_info = {};
-
-  $scope.requestCount = 0;
-
-}]);
